@@ -4,6 +4,7 @@ using System.Windows.Forms;
 
 using Hawkeye.WinApi;
 using Hawkeye.Configuration;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolTip;
 
 namespace Hawkeye.UI
 {
@@ -12,6 +13,8 @@ namespace Hawkeye.UI
     /// </summary>
     internal partial class MainForm : Form, IDefaultLayoutProvider
     {
+        private bool vClose = false;
+
         private IntPtr currentSpiedWindow = IntPtr.Zero;
 
         /// <summary>
@@ -131,9 +134,10 @@ namespace Hawkeye.UI
             var clrAndBitness = string.IsNullOrEmpty(clr) ? bitness : clr + " " + bitness;
 
             var title = string.Format("Hawkeye {0}", clrAndBitness);
-            if (string.IsNullOrEmpty(controlName))
-                base.Text = title;
-            else base.Text = string.Format("{0} - {1}", controlName, title);
+            base.Text = "Hawkeye 3.0.0";
+            //if (string.IsNullOrEmpty(controlName))
+            //    base.Text = title;
+            //else base.Text = string.Format("{0} - {1}", controlName, title);
         }
 
         private void SetWindowSettings(MainFormSettings settings)
@@ -165,6 +169,34 @@ namespace Hawkeye.UI
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void notify_Click(object sender, EventArgs e)
+        {
+            // MainForm
+            //this.Visible = !(this.Visible);
+        }
+
+        private void notify_DoubleClick(object sender, EventArgs e)
+        {
+            this.Visible = !(this.Visible);
+        }
+
+        private void closeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //this.Visible = true;
+            vClose = true;
+            Close();
+            //System.Windows.Forms.Application.Exit();
+            // e.Cancel = false;
+        }
+
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (!vClose) {
+                this.Visible = false;
+                e.Cancel = true;
+            }
         }
     }
 }

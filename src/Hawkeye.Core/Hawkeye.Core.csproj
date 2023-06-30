@@ -30,6 +30,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>hawkeye.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="log4net">
       <HintPath>..\..\lib\Log4net\log4net.dll</HintPath>
@@ -235,6 +238,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Highlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="hawkeye.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

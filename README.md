@@ -1,14 +1,35 @@
-> ## Important notice
->
-> **From 2023/02/11, this repository is archived. If you want to contribute or have issues, you are welcome to head over to Hawkeye's new home: <https://github.com/zrfisaac/Hawkeye3>**
+[//]: # (# - language)
+[![](https://img.shields.io/badge/english-000080?style=for-the-badge)](https://github.com/zrfisaac/DBMS-Easy/blob/main/README.en-US.md)
+[![](https://img.shields.io/badge/português-008000?style=for-the-badge)](https://github.com/zrfisaac/DBMS-Easy/blob/main/README.pt-BR.md)
 
-# Hawkeye 2
 
-## Foreword
+<h1 align="center">
+<img src="https://github.com/zrfisaac/Hawkeye3/blob/master/art/Laure/hawkeye.jpg" width="80">
+<p>Hawkeye 3</p>
+</h1>
 
-Starting with Version 2, Hawkeye source code is hosted on github: <https://github.com/odalet/Hawkeye2>, though the project's offical home remains the Codeplex site: <http://hawkeye.codeplex.com/>
+<p align="center">
+	<a href="https://github.com/zrfisaac/Hawkeye3/releases/download/v3.0.0/Hawkeye.3.0.0.Install.exe">
+		<img src="https://img.shields.io/badge/version-3.0.0-blue?style=flat-square" alt="Discord">
+	</a>
+	<a href="https://www.patreon.com/zrfisaac">
+		<img src="https://img.shields.io/badge/$-donate-ff69b4.svg?&maxAge=2592000&amp;style=flat-square">
+	</a>
+</p>
 
-## Project Description
+<p align="center">
+  <a href="#about">About</a> •
+  <a href="#features">Features</a> •
+  <a href="#building">Building</a> •
+  <a href="#credits">Credits</a> •
+  <a href="#license">License</a>
+</p>
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/16006294/218315541-137cfe51-d15f-42bf-b3be-3d064acd6191.png">
+</p>
+
+## About
 
 Debugging a managed Windows application is, most of the time, not an easy task. Thus, any tool that can help will make your life easier.
 
@@ -44,9 +65,10 @@ C++/CLI projects referenced in a C# project are not as well integrated as C# pro
 ## Credits
 
 * Hawkeye was originally created by Corneliu I. Tusnea (his blog: <http://www.acorns.com.au>) from Readify (<http://www.readify.net>)
-* It is now maintained and supported by Olivier Dalet (<http://odalet.wordpress.com>)
+* It was maintained and supported by Olivier Dalet (<http://odalet.wordpress.com>)
+* It is now maintained and supported by Isaac Santana (<https://github.com/zrfisaac>)
 
----
+## License
 
 * License: [Ms-RL][msrl]
 * History page: [Here][history]

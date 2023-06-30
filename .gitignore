@@ -1,3 +1,6 @@
+.vs/
+*.exe
+
 # Specific to this project
 /src/Intermediate
 /src/Build
